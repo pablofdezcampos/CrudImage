@@ -1,8 +1,6 @@
 const { connection, Factory } = require('../factory/query_factory');
 
 async function getInitializationData(req, res) {
-    console.log('Get Init Data');
-
     let sql_shirts = `select * from shirts`;
     const res_shirts = await Factory(sql_shirts);
     res.json({ shirts: res_shirts });
@@ -23,7 +21,14 @@ async function getShirts(req, res) {
 }
 
 async function newShirt(req, res) {
-    console.log('New shirt');
+    const { body, file } = req;
+    if (file) {
+        let url = `http://localhost:8080/img/${file.filename}`;
+        let sql = `insert into shirts(name, img_url, color) values
+                   ${connection.escape(body.name)}, ${connection.escape(url)}, ${connection.escape(body.color)} `;
+        const result = await Factory(sql); +
+        res.json(result);
+    }
 }
 
 
