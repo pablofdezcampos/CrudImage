@@ -18,6 +18,7 @@
     - npm i, to get the dependencies.
 - You have to create a table in your SQL Server.
 - My table has this code:
+    - 
 ![image](https://user-images.githubusercontent.com/57486874/160827096-89f7382f-935b-4bb4-a75b-78db71cd3bee.png)
 
 - asd
