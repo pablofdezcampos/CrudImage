@@ -1,3 +1,5 @@
+const { connection, Factory } = require('../factory/query_factory');
+
 async function getInitializationData(req, res) {
     console.log('Get Init Data');
 }
