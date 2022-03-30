@@ -5,7 +5,7 @@ const path = require('path');
 const cors = require('cors');
 const exp = require('constants');
 
-//Inizialization
+//Initialization
 const app = express();
 
 //Setting  Port
