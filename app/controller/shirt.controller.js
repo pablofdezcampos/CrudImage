@@ -17,7 +17,7 @@ async function getOneShirt(req, res) {
 }
 
 async function getShirts(req, res) {
-    let sql = 'select * from shirts';
+    let sql = `select * from shirts`;
     const result = await Factory(sql);
     res.json(result);
 }
