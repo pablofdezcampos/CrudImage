@@ -5,7 +5,7 @@ const query = util.promisify(connection.query).bind(connection);
 async function Factory(sql) {
     try {
         let sql_query = sql;
-        const result = query(sql);
+        const result = await query(sql_query);
         return result;
     } catch (err) {
         console.log(`There was an error ${err}`);
