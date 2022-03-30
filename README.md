@@ -9,6 +9,11 @@
 - Cors -> to access to resources in a different domain.
 - Node.js -> code in server.
 
+# Specifications
+- I use MVC (Model Vist Controller).
+- I use js for the backend.
+- There is not front-end
+
 # Install
 - You have to have Node.js and MySQL like enviroments variables.
 - To do the project from start:
