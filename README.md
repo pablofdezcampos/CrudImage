@@ -17,11 +17,14 @@
 - If you want to prove the backend:
     - npm i, to get the dependencies.
 - You have to create a table in your SQL Server.
-- My table has this code:
-    - 
+- You have to have a user in SQL with all the privileges.
+- You have to change the mysql_data.json to the preferences of your system and SQL.
+
+# Table Creation
+
 ![image](https://user-images.githubusercontent.com/57486874/160827096-89f7382f-935b-4bb4-a75b-78db71cd3bee.png)
 
-- asd
-
 # Test
-- You can test the backend in
+- You can test the backend in PostMan for example.
+- Pass the route to PostMan and set a get for the route.
+- Run the project with npm start.
